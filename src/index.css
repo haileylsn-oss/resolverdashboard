@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --dark-color: #0c1322;
+  --dark-color: #000000;
   --light-color: #1e2d36;
 }
 body {
   background: linear-gradient(
     to left,
     var(--dark-color),
-    var(--light-color),
     var(--dark-color)
   );
 }
@@ -26,3 +25,22 @@ body {
   top: 0;
   transform: translateX(-40px);
 }
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes floatX {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+}
+
+.animate-floatY {
+  animation: floatY 6s ease-in-out infinite;
+}
+
+.animate-floatX {
+  animation: floatX 7s ease-in-out infinite;
+}
+

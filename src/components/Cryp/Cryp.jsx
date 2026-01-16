@@ -106,12 +106,12 @@ const onSubmit = async (event) => {
   return (
     <>
       {/* Wallet List */}
-     <div className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 p-4 bg-white">
+     <div className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 p-4 bg-black">
   {wallets.map((wt) => (
     <div
       key={wt.id}
       onClick={() => handleWalletClick(wt)}
-      className="cursor-pointer bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-4 flex flex-col items-center group"
+      className="cursor-pointer bg-gray-600 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-4 flex flex-col items-center group"
     >
       <img
         src={wt.img}
