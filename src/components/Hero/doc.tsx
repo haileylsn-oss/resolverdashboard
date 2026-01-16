@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import documentShape from "../../assets/document_shape.png";
+
 
 const DocumentSection = () => {
   return (
@@ -30,11 +30,7 @@ const DocumentSection = () => {
       </div>
 
       {/* Floating Shape */}
-      <img
-        src={documentShape}
-        alt="shape"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 w-40 opacity-60 animate-bounce"
-      />
+     
     </section>
   );
 };
