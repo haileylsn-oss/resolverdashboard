@@ -11,6 +11,7 @@ import on from '../src/assets/so.jpg'
 import IssuesSection from "./components/Hero/issues";
 import DownloadSection from "./components/Hero/download";
 import DocumentSection from "./components/Hero/doc";
+import Telegram from './components/telegram'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
    <DownloadSection/>
    <DocumentSection/>
    <Footer/>
+   <Telegram/>
 
    
 
